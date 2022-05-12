@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Repasando Javascript/CSS</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a>Utilidades</a>
+                    <ul>
+                        <li>
+                            <a id="calculadora" href="calculadora.html"></a>
+                        </li>
+                        <li>
+                            <a id="reloj" href="reloj.html"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a id="usuario">Iniciar sesión</a>
+                    <ul>
+                        <li>
+                            <a id="menuLogIn" href="login.html">Log In</a>
+                        </li>
+                        <li>
+                            <a id="menuLogOut" href="../index.html"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <section id="content">
+            <div class="contacto">
+                <h3>Comentarios</h3>
+                <form id="contacto">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                    <select name="sex" id="sex" aria-placeholder="Genero" required>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="mujer">Prefiro no decirlo</option>
+                    </select>
+                    <textarea form="contacto" name="textarea" rows="4" cols="1"
+                        required>Ingrese aquí su consulta</textarea>
+                    <input id="send" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+        <aside>
+            <div id="barTitle"></div>
+            <form id="buscar">
+                <input type="text" name="" id="text" placeholder="Ingrese busqueda">
+                <input type="submit" value="Buscar">
+            </form>
+        </aside>
+        <div class="clearfix"></div>
+        <footer>
+            Developed by Cesar Luis Medina with HTML5 &copy; 2020
+        </footer>
+    </div>
+    <script src="../assets/scripts/main.js" type="text/javascript"></script>
+</body>
+
+</html>

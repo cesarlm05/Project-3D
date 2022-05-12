@@ -1,0 +1,353 @@
+*{
+    margin: 0px auto;
+    padding: 0px auto;
+    font-family: arial;
+    box-sizing: border-box;
+}
+body {
+    background: url("../img/main-bg2-e151.jpg");
+    color: cornsilk;
+    font-family: Helvetica;
+}
+#container {
+    width: 90%;
+    margin: 0px auto;
+}
+header{
+    background: rgba(0, 0, 0, 0.6);
+    height: 80px;
+    width: 100% auto;
+    text-align: center;
+    line-height: 70px;
+}
+header h1{
+    color: rgb(0, 162, 255);
+}
+nav {
+    width: 100% auto;
+    background-color: rgba(0, 95, 133, 0.6);
+}
+/*Styles para el Menú*/
+.menu{
+    width: 100% auto;
+    height: 50px;
+    display: flex;
+    perspective: 200px;
+}
+.menu ul{
+    display: flex;
+    margin: auto;
+}
+.menu li{
+    list-style: none;
+    padding: 15px 20px;
+}
+.menu li a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menu li a:hover{
+    background: rgba(0,0,0,0.3);
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+    font-style: italic;
+    font-size: 25px;
+}
+.menu ul li ul{
+    *display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #58b813;
+    margin-top: 15px;
+    transform: rotateY(240deg) scale(0);
+    transition: all 1s;
+    box-shadow: 1px 1px 10px 0px black;
+}
+.menu ul li:hover > ul{
+    transform: rotateY(0deg) scale(1);
+    transition: all 1s;
+}
+.menu ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 8px solid #58b813;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 20px;
+}
+.menu ul li ul li ul li{
+    position: relative;
+}
+.menu ul li ul li:hover > ul{
+    transform: rotateY(0deg) scale(1);
+}
+.menu ul li ul li ul{
+    right: -90px;
+    top: 36px;
+    background: #b87113;
+}
+.menu ul li ul li ul:before{
+    position: absolute;
+    border-bottom: 8px solid #b87113;
+    margin-top: 18px;
+    margin-left: -14px;
+    transform: rotate(-90deg);
+}
+/*Styles para contenidos*/
+.clearfix{
+    clear: both;
+}
+#content {
+    float: left;
+    width: 80%;
+    padding: 40px;
+    min-height: 500px;
+    background: rgba(126, 252, 0, 0.6);
+}
+aside {
+    float: left;
+    width: 18%;
+    padding: 10px;
+    margin: 10px 0px 10px 10px;
+    background: rgba(126, 252, 0, 0.6);
+    border: 1px solid greenyellow;
+    border-radius: 10%;
+}
+aside form{
+    float: left;
+    padding: 10% 0% 10% 0%;
+}
+aside input{
+    margin: 5% 0% 5% 0%;
+    padding: 0% 5% 0% 5%;
+}
+.article {
+    color: blanchedalmond;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+.article:first-child {
+    margin-top: 10px;
+    border-top: 1px solid #eeeeee;
+}
+.article h2 {
+    font-size: 25px;
+}
+/*Styles para formularios*/
+form {
+    font-style: initial;
+}
+#buscar :hover{
+    transition: all 2s;
+    border-radius: 30px;
+}
+
+.sesion {
+    border: 1px solid greenyellow;
+    width: 300px;
+	height: 250px;
+    margin-top: 15px;
+	margin-left: 6%;
+    background-color: rgba(0, 95, 133, 0.6);
+	border-radius:8px;
+    padding: 20px 9px 0px 9px;
+    text-align: center;
+    float: left;
+}
+#frmSesion input{
+    width: 90%;
+    margin-top: 5%;
+    padding: 5%;
+}
+#iniciar {
+    color: black;
+    font-size: 20px;
+    background: rgb(9, 255, 0);
+    border-radius: 10px;
+}
+#frmSesion :hover{
+	box-shadow: 0px 0px 25px rgb(9, 255, 0);
+    transition: all 2s;
+    font-size: 15px;
+}
+.registro {
+    border: 1px solid greenyellow;
+    width: 300px;
+	height: 400px;
+    margin-top: 15px;
+	margin-left: 6%;
+    background-color: rgba(0, 95, 133, 0.6);
+	border-radius:8px;
+    padding: 20px 9px 0px 9px;
+    text-align: center;
+    float: left;
+}
+#frmRegistro input{
+    width: 90%;
+    margin-top: 5%;
+    padding: 5%;
+}
+#registrar {
+    color: black;
+    font-size: 20px;
+    background: rgb(255, 196, 0);
+    border-radius: 10px;
+}
+#frmRegistro :hover{
+	box-shadow: 0px 0px 25px rgb(255, 196, 0);
+    transition: all 1s;
+    font-size: 15px;
+}
+
+.contacto {
+    border: 1px solid greenyellow;
+    width: 300px;
+	height: 500px;
+    margin-top: 15px;
+	margin-left: 6%;
+    background-color: rgba(0, 95, 133, 0.6);
+	border-radius:8px;
+    padding: 20px 9px 0px 9px;
+    text-align: center;
+    float: left;
+}
+#contacto input{
+    width: 90%;
+    margin-top: 5%;
+    padding: 5%;
+}
+#contacto select{
+    width: 90%;
+    margin-top: 5%;
+    padding: 5%;    
+}
+#contacto textarea{
+    width: 90%;
+    margin-top: 5%;
+    padding: 5%;    
+}
+#contacto :hover{
+	box-shadow: 0px 0px 25px rgb(255, 255, 255);
+    transition: all 1s;
+    border-radius: 15px;
+    background-color: aqua;
+}
+#send {
+    font-size: 20px;
+}
+#datos {
+    padding: 3%;
+    text-align: center;
+    font-size: 20px;
+}
+img {
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+    padding: 1%;
+    border: 3px solid rgb(13, 97, 2);
+}
+/*Styles para la calculadora*/
+.teclas {
+	display: flex;
+}
+.calc {
+    border: 1px solid black;
+    border-radius: 5%;
+	background-color: #ce5af1;
+	width: 50%;
+	margin: auto;
+	margin-top: 1px;
+}
+.calc:hover {
+	box-shadow: 0px 0px 25px rgb(10, 78, 1);
+}
+.pantalla {
+    margin: 0% auto;
+    width: 80%;
+}
+
+#resultado {
+	background-color: #ce5af1;
+	color: rgb(0, 0, 0);
+    padding: 1px;
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 25px;
+    text-align: left;
+}
+
+.opciones {
+    margin: 0% auto;
+	padding: 15px 15px 15px 7px;
+}
+.opciones button {
+	display: block;
+	width: 54px;
+	height: 54px;
+	padding: 9px 15px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+}
+.opciones button:hover {
+	box-shadow: 0px 0px 25px rgb(255, 255, 255);
+}
+
+.numeros div{
+    text-align: center;
+}
+.numeros {
+    margin: 0% auto;
+	padding: 15px 7px 15px 15px;
+}
+.numeros button {
+    border: 0px;
+	background-color: #fff;
+	transition: all 0.09s
+}
+.numeros button:hover {
+	box-shadow: 0px 0px 25px rgb(43, 43, 43);
+}
+#ce {
+    background-color: yellow;
+}
+#decimo {
+    width: 57px;
+}
+.ejecutar {
+    text-align: center;
+}
+.ejecutar button {
+    width: 100%;
+	background-color: #000;
+	color: #fff;
+	border: none;
+    font-size: 25px;
+}
+.ejecutar button:hover {
+	box-shadow: 0px 0px 25px rgb(255, 255, 255);
+}
+button {
+	margin: 2px 0px;
+	padding: 15px 23px;
+    font-size: 19px;
+    border: 0px;
+    border-radius: 30%;
+}
+/*Footer*/
+footer {
+    background: rgba(0, 0, 0, 0.658);
+    color: blanchedalmond;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}

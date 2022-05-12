@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Repasando Javascript/CSS</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a>Utilidades</a>
+                    <ul>
+                        <li>
+                            <a id="calculadora" href="calculadora.html"></a>
+                        </li>
+                        <li>
+                            <a id="reloj" href="reloj.html"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a id="usuario">Iniciar sesión</a>
+                    <ul>
+                        <li>
+                            <a id="menuLogIn" href="login.html">Log In</a>
+                        </li>
+                        <li>
+                            <a id="menuLogOut" href="../index.html"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <section id="content">
+            <p>
+            <div id="datos"></div>
+            </p>
+            <div class="calc">
+                <div class="pantalla">
+                    <div id="resultado"></div>
+                </div>
+                <div class="teclas">
+                    <div class="numeros">
+                        <div>
+                            <button id="n1">1</button>
+                            <button id="n2">2</button>
+                            <button id="n3">3</button>
+                        </div>
+                        <div>
+                            <button id="n4">4</button>
+                            <button id="n5">5</button>
+                            <button id="n6">6</button>
+                        </div>
+                        <div>
+                            <button id="n7">7</button>
+                            <button id="n8">8</button>
+                            <button id="n9">9</button>
+                        </div>
+                        <div>
+                            <button id="decimo">.</button>
+                            <button id="n0">0</button>
+                            <button id="ce">C</button>
+                        </div>
+                        <div class="ejecutar">
+                            <button id="ejecutar">=</button>
+                        </div>
+                    </div>
+                    <div class="opciones">
+                        <button id="s">+</button>
+                        <button id="r">-</button>
+                        <button id="d">÷</button>
+                        <button id="m">x</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div id="barTitle"></div>
+            <form id="buscar">
+                <input type="text" name="" id="text" placeholder="Ingrese busqueda">
+                <input type="submit" value="Buscar">
+            </form>
+        </aside>
+        <div class="clearfix"></div>
+        <footer>
+            Developed by Cesar Luis Medina with HTML5 &copy; 2020
+        </footer>
+    </div>
+    <script src="../assets/scripts/main.js" type="text/javascript"></script>
+    <script src="../assets/scripts/calc.js" type="text/javascript"></script>
+</body>
+
+</html>
